@@ -275,7 +275,8 @@ ${footer}
   await writeFile(path.join(dir,'index.html'),page);
 }
 
-await cp(path.join(ROOT,'assets'),path.join(OUT,'assets'),{recursive:true});\nawait cp(path.join(ROOT,'favicon.svg'),path.join(OUT,'favicon.svg'));
+await cp(path.join(ROOT,'assets'),path.join(OUT,'assets'),{recursive:true});
+await cp(path.join(ROOT,'favicon.svg'),path.join(OUT,'favicon.svg'));
 await writeFile(path.join(OUT,'.nojekyll'),'');
 await writeFile(path.join(OUT,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${BASE}sitemap.xml\n`);
 const urls=[BASE,...prompts.map(p=>`${BASE}${p.slug}/`)];
