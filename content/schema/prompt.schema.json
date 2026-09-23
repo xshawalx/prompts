@@ -1,0 +1,42 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "XSHAWALX Prompt Record",
+  "type": "object",
+  "required": ["slug","title","description","audience","category","tags","featured","version","updatedAt","prompt"],
+  "properties": {
+    "slug": {"type":"string","pattern":"^[a-z0-9]+(?:-[a-z0-9]+)*$"},
+    "title": {"type":"string","minLength":3},
+    "description": {"type":"string","minLength":10},
+    "audience": {"type":"string","minLength":2},
+    "category": {"type":"string","minLength":2},
+    "tags": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "useCases": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "featured": {"type":"boolean"},
+    "isNew": {"type":"boolean"},
+    "version": {"type":"string"},
+    "updatedAt": {"type":"string","format":"date"},
+    "howToUse": {"type":"array","items":{"type":"string"}},
+    "relatedSlugs": {"type":"array","items":{"type":"string"},"uniqueItems":true},
+    "fields": {
+      "type":"array",
+      "items": {
+        "type":"object",
+        "required":["key","label","type"],
+        "properties": {
+          "key":{"type":"string","pattern":"^[a-zA-Z][a-zA-Z0-9_]*$"},
+          "label":{"type":"string"},
+          "type":{"enum":["text","textarea","number","dropdown","multi-select","checkbox","radio","optional-text","required-text","date","range","url"]},
+          "placeholder":{"type":"string"},
+          "required":{"type":"boolean"},
+          "help":{"type":"string"},
+          "options":{"type":"array","items":{"type":"string"}},
+          "min":{"type":"number"},
+          "max":{"type":"number"},
+          "step":{"type":"number"},
+          "default":{"type":["string","number","boolean","array"]}
+        }
+      }
+    },
+    "prompt":{"type":"string","minLength":1}
+  }
+}
