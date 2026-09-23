@@ -1,0 +1,85 @@
+{
+  "slug": "job-search-task",
+  "title": "Job Search Task",
+  "description": "Run a focused, repeatable search for current vacancies across multiple legitimate sources using your own role, location and job criteria.",
+  "audience": "Job seekers who want a structured recurring search across job portals and employer career pages",
+  "category": "Career",
+  "tags": [
+    "job search",
+    "vacancies",
+    "career",
+    "job applications",
+    "recruitment",
+    "job portals",
+    "employer careers",
+    "recurring search"
+  ],
+  "useCases": [
+    "search current job vacancies",
+    "find roles across multiple job sources",
+    "filter vacancies by work arrangement and employment type",
+    "repeat a consistent job search over time"
+  ],
+  "featured": true,
+  "isNew": true,
+  "version": "1.0",
+  "updatedAt": "2026-09-23",
+  "fields": [
+    {
+      "key": "targetRole",
+      "label": "Target Role",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Business Analyst"
+    },
+    {
+      "key": "location",
+      "label": "Location",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Kuala Lumpur, Malaysia"
+    },
+    {
+      "key": "workArrangement",
+      "label": "Work Arrangement",
+      "type": "text",
+      "required": false,
+      "placeholder": "Hybrid or Remote"
+    },
+    {
+      "key": "employmentType",
+      "label": "Employment Type",
+      "type": "text",
+      "required": false,
+      "placeholder": "Permanent, Full-time"
+    },
+    {
+      "key": "salaryTarget",
+      "label": "Salary Target",
+      "type": "text",
+      "required": false,
+      "placeholder": "RM10,000/month"
+    },
+    {
+      "key": "keywords",
+      "label": "Keywords",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "API, digital banking, product, requirements, integration"
+    },
+    {
+      "key": "exclude",
+      "label": "Exclude",
+      "type": "textarea",
+      "required": false,
+      "placeholder": "PMO, project manager, internship"
+    }
+  ],
+  "howToUse": [
+    "Enter your target role and location, then add any useful filters such as work arrangement, employment type, salary, keywords or exclusions.",
+    "Copy the completed prompt and open ChatGPT.",
+    "Run the prompt when you want a fresh vacancy search so the results reflect current listings.",
+    "Personally review each vacancy and employer before deciding whether to apply."
+  ],
+  "prompt": "MASTER PROMPT — RECURRING JOB SEARCH\n\nAct as my job-search research assistant.\n\nSearch for current job vacancies matching the criteria below.\n\nTARGET ROLE:\n{{targetRole}}\n\nLOCATION:\n{{location}}\n\n{{#if workArrangement}}WORK ARRANGEMENT:\n{{workArrangement}}\n\n{{/if}}{{#if employmentType}}EMPLOYMENT TYPE:\n{{employmentType}}\n\n{{/if}}{{#if salaryTarget}}SALARY TARGET:\n{{salaryTarget}}\n\n{{/if}}{{#if keywords}}IMPORTANT KEYWORDS:\n{{keywords}}\n\n{{/if}}{{#if exclude}}EXCLUDE:\n{{exclude}}\n\n{{/if}}Search broadly across relevant sources, including:\n- major job portals\n- company careers websites\n- direct employer vacancy pages\n- other legitimate public job listings\n\nDo not rely only on one job platform.\n\nPrioritise roles that genuinely match the criteria.\n\nFor every suitable vacancy, provide:\n- Job Title\n- Company\n- Location\n- Work arrangement if stated\n- Employment type if stated\n- Salary if publicly stated\n- Why it appears relevant\n- Direct application / vacancy link\n\nDo not invent missing information.\n\nIf salary, working arrangement or other details are not stated, write:\n\"Not stated.\"\n\nAvoid duplicate vacancies already included in previous results where possible.\n\nOnly surface legitimate vacancies that appear active at the time of checking.\n\nKeep the output concise and easy to scan.\n\nI will personally review each vacancy and decide whether to apply."
+}
