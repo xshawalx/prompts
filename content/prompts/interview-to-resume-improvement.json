@@ -1,0 +1,59 @@
+{
+  "slug": "interview-to-resume-improvement",
+  "title": "Interview to Resume Improvement",
+  "description": "Use a real interview transcript to identify truthful resume improvements while your resume is still evolving.",
+  "audience": "Job seekers refining an evolving resume after interviews",
+  "category": "Career",
+  "tags": [
+    "interview",
+    "resume",
+    "CV",
+    "career",
+    "resume improvement",
+    "interview transcript",
+    "experience audit"
+  ],
+  "useCases": [
+    "find legitimate resume improvements from an interview transcript",
+    "identify underrepresented experience",
+    "compare interview answers against a current resume"
+  ],
+  "featured": false,
+  "isNew": true,
+  "version": "1.0",
+  "updatedAt": "2026-09-23",
+  "relatedSlugs": [
+    "resume-builder",
+    "interview-performance-review"
+  ],
+  "fields": [
+    {
+      "key": "targetRole",
+      "label": "Target Role",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Business Analyst"
+    },
+    {
+      "key": "interviewedRole",
+      "label": "Interviewed Role",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Senior Business Analyst"
+    },
+    {
+      "key": "country",
+      "label": "Country / Market",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Malaysia"
+    }
+  ],
+  "howToUse": [
+    "Fill in your target role, the role you interviewed for and your job market.",
+    "Copy the completed prompt and open ChatGPT.",
+    "Attach your latest resume and the interview transcript.",
+    "Review every suggested resume change before accepting it."
+  ],
+  "prompt": "MASTER PROMPT — INTERVIEW TRANSCRIPT TO RESUME IMPROVEMENT\n\nAct as my resume strategist and interview analysis coach.\n\nTARGET ROLE:\n{{targetRole}}\n\nROLE I INTERVIEWED FOR:\n{{interviewedRole}}\n\nCOUNTRY / JOB MARKET:\n{{country}}\n\nI will attach:\n1. My latest resume\n2. The transcript of an interview I recently attended\n\nYour purpose is NOT to invent new experience.\n\nAnalyse the transcript and compare it against my current resume.\n\nIdentify whether the interview revealed any legitimate information about my REAL experience that is:\n- missing from the resume\n- unclear in the resume\n- underrepresented\n- described too vaguely\n- relevant to my target role\n\nExamples may include:\n- tools\n- platforms\n- systems\n- integrations\n- responsibilities\n- project contributions\n- stakeholder interactions\n- technical knowledge\n- business knowledge\n- delivery responsibilities\n- achievements\n\nIMPORTANT:\n\nOnly recommend information supported by:\n- my existing resume\n- my own statements in the interview transcript\n\nDo NOT infer that I have a skill simply because the interviewer asked me about it.\n\nDo NOT invent technologies, achievements, responsibilities or metrics.\n\nFor every suggested resume change, show:\n\n1. What the transcript revealed\n2. Where it currently appears (or does not appear) in my resume\n3. Why the change may improve clarity\n4. Suggested wording\n5. Whether you need my confirmation before adding it\n\nIf there is nothing meaningful to update, clearly tell me:\n\n\"No meaningful resume update is required from this interview.\"\n\nDo not force changes simply to produce an output."
+}

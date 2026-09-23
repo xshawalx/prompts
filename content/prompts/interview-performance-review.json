@@ -1,0 +1,60 @@
+{
+  "slug": "interview-performance-review",
+  "title": "Interview Performance Review",
+  "description": "Review how you actually communicated your real experience in an interview and turn weak answers into natural, truthful practice material.",
+  "audience": "Job seekers who want to improve interview performance using their real resume and transcript",
+  "category": "Career",
+  "tags": [
+    "interview",
+    "interview coaching",
+    "career",
+    "performance review",
+    "interview transcript",
+    "behavioural questions",
+    "technical interview"
+  ],
+  "useCases": [
+    "review interview performance",
+    "improve weak interview answers",
+    "identify repeated interview habits",
+    "prepare for the next interview"
+  ],
+  "featured": false,
+  "isNew": true,
+  "version": "1.0",
+  "updatedAt": "2026-09-23",
+  "relatedSlugs": [
+    "interview-to-resume-improvement",
+    "resume-builder"
+  ],
+  "fields": [
+    {
+      "key": "targetRole",
+      "label": "Target Role",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Business Analyst"
+    },
+    {
+      "key": "interviewedRole",
+      "label": "Interviewed Role",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Senior Business Analyst"
+    },
+    {
+      "key": "experienceLevel",
+      "label": "Experience Level",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Mid-level / 5 years"
+    }
+  ],
+  "howToUse": [
+    "Fill in your target role, interviewed role and experience level.",
+    "Copy the completed prompt and open ChatGPT.",
+    "Attach your latest resume and interview transcript.",
+    "Use the review to practise better ways of explaining the same real experience before your next interview."
+  ],
+  "prompt": "MASTER PROMPT — INTERVIEW PERFORMANCE REVIEW & IMPROVEMENT\n\nAct as my interview coach, career strategist and critical reviewer.\n\nTARGET ROLE:\n{{targetRole}}\n\nROLE I INTERVIEWED FOR:\n{{interviewedRole}}\n\nEXPERIENCE LEVEL:\n{{experienceLevel}}\n\nI will attach:\n1. My latest resume\n2. My interview transcript\n\nAnalyse how I actually performed in the interview.\n\nDo NOT judge me only based on perfect textbook answers.\n\nEvaluate whether I communicated MY REAL experience clearly.\n\nReview:\n\n- introduction / tell-me-about-yourself answer\n- technical questions\n- behavioural questions\n- stakeholder questions\n- situational questions\n- project explanations\n- communication clarity\n- answer structure\n- unnecessary over-explaining\n- underselling\n- nervous or unclear answers\n- questions I did not answer directly\n- areas where stronger preparation is needed\n\nFor each important interview question:\n\n1. Quote or summarise the question.\n2. Explain what the interviewer was likely trying to understand.\n3. Summarise how I answered.\n4. Tell me what worked.\n5. Tell me what weakened the answer.\n6. Show how I could answer the SAME question better next time.\n\nCRITICAL RULE:\n\nThe improved answer MUST use only experience supported by:\n- my resume\n- my interview transcript\n- information I personally provide\n\nDo NOT invent:\n- projects\n- achievements\n- technologies\n- responsibilities\n- leadership\n- metrics\n- experience\n\nDo not turn my answer into robotic corporate language.\n\nKeep the improved answer:\n- natural\n- confident\n- conversational\n- clear\n- truthful\n- easy for me to actually say aloud\n\nPreserve my personality.\n\nIf my original answer was already good, say so instead of rewriting it unnecessarily.\n\nAt the end, give me:\n\nA. TOP 5 THINGS I DID WELL\n\nB. TOP 5 THINGS TO IMPROVE\n\nC. QUESTIONS I SHOULD PREPARE BEFORE MY NEXT INTERVIEW\n\nD. TECHNICAL TOPICS I SHOULD REFRESH\n\nE. MY REPEATED INTERVIEW HABITS OR PATTERNS\n\nF. A SHORT PRACTICE PLAN BEFORE THE NEXT INTERVIEW\n\nRemember:\n\nThe goal is NOT to create perfect AI answers.\n\nThe goal is to help me become better at explaining my own real experience."
+}
