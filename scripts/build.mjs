@@ -50,7 +50,7 @@ function head({title,description,url,ogType='website'}){
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="${esc(title)}">
 <meta name="twitter:description" content="${esc(description)}">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="icon" href="/prompts/favicon.svg" type="image/svg+xml">\n<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/prompts/assets/css/styles.css">`;
@@ -70,7 +70,7 @@ const header=`<body>
 </header>`;
 
 const footer=`<footer class="footer">
-  <p>Shawal <span aria-hidden="true">Â·</span> @xshawalx</p>
+  <p>Shawal <span aria-hidden="true">&middot;</span> @xshawalx</p>
 </footer>
 </div>`;
 
@@ -79,11 +79,11 @@ function supportSection(index='SUPPORT'){
     <div>
       <p class="section-index" aria-hidden="true">${esc(index)}</p>
       <h2 id="support-title">Support my work</h2>
-      <p>Found something useful? You can support what Iâ€™m building.</p>
+      <p>Found something useful? You can support what I&rsquo;m building.</p>
     </div>
     <div class="support-actions">
-      <a class="support-link support-link--primary" href="https://www.paypal.com/paypalme/noorshawal" target="_blank" rel="noopener noreferrer" aria-label="Support Shawal via PayPal â€” opens in a new tab">PayPal â†—</a>
-      <a class="support-link" href="https://buymeacoffee.com/xshawalx" target="_blank" rel="noopener noreferrer" aria-label="Support Shawal via Buy Me a Coffee â€” opens in a new tab">Buy Me a Coffee â†—</a>
+      <a class="support-link support-link--primary" href="https://www.paypal.com/paypalme/noorshawal" target="_blank" rel="noopener noreferrer" aria-label="Support Shawal via PayPal &mdash; opens in a new tab">PayPal &#8599;</a>
+      <a class="support-link" href="https://buymeacoffee.com/xshawalx" target="_blank" rel="noopener noreferrer" aria-label="Support Shawal via Buy Me a Coffee &mdash; opens in a new tab">Buy Me a Coffee &#8599;</a>
     </div>
   </section>`;
 }
@@ -111,7 +111,7 @@ ${header}
     <p class="intro">Useful AI master prompts you can customize, copy and use.</p>
     <div class="toolbar">
       <label class="sr-only" for="prompt-search">Search prompts</label>
-      <input class="input" id="prompt-search" type="search" placeholder="Search by title, category, tag, use caseâ€¦" autocomplete="off">
+      <input class="input" id="prompt-search" type="search" placeholder="Search by title, category, tag, use case&hellip;" autocomplete="off">
       <a class="button button-primary" href="#all-prompts">Browse all</a>
     </div>
   </section>
@@ -239,7 +239,7 @@ ${header}
     <h1 class="prompt-title">${esc(p.title)}</h1>
     <p class="prompt-intro">${esc(p.description)}</p>
     <div class="meta-row">
-      <span>Who itâ€™s for: ${esc(p.audience)}</span>
+      <span>Who it&rsquo;s for: ${esc(p.audience)}</span>
       <span>Version ${esc(p.version)}</span>
       <span>Updated ${esc(fmt(p.updatedAt))}</span>
     </div>
@@ -275,7 +275,7 @@ ${footer}
   await writeFile(path.join(dir,'index.html'),page);
 }
 
-await cp(path.join(ROOT,'assets'),path.join(OUT,'assets'),{recursive:true});
+await cp(path.join(ROOT,'assets'),path.join(OUT,'assets'),{recursive:true});\nawait cp(path.join(ROOT,'favicon.svg'),path.join(OUT,'favicon.svg'));
 await writeFile(path.join(OUT,'.nojekyll'),'');
 await writeFile(path.join(OUT,'robots.txt'),`User-agent: *\nAllow: /\nSitemap: ${BASE}sitemap.xml\n`);
 const urls=[BASE,...prompts.map(p=>`${BASE}${p.slug}/`)];

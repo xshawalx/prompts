@@ -6,7 +6,10 @@
   "scripts": {
     "build": "node scripts/build.mjs",
     "validate": "node scripts/validate.mjs",
-    "check": "npm run validate && npm run build"
+    "check": "npm run validate && npm run build && npm run quality",
+    "quality": "node scripts/quality.mjs"
   },
-  "engines": { "node": ">=20" }
-}
+  "engines": {
+    "node": ">=20"
+  }
+}\n
