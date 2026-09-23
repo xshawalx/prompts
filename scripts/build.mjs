@@ -70,7 +70,7 @@ const header=`<body>
 </header>`;
 
 const footer=`<footer class="footer">
-  <p>Shawal <span aria-hidden="true">·</span> @xshawalx</p>
+  <p>Shawal <span aria-hidden="true">Â·</span> @xshawalx</p>
 </footer>
 </div>`;
 
@@ -79,11 +79,11 @@ function supportSection(index='SUPPORT'){
     <div>
       <p class="section-index" aria-hidden="true">${esc(index)}</p>
       <h2 id="support-title">Support my work</h2>
-      <p>Found something useful? You can support what I’m building.</p>
+      <p>Found something useful? You can support what Iâ€™m building.</p>
     </div>
     <div class="support-actions">
-      <a class="support-link support-link--primary" href="https://www.paypal.com/paypalme/noorshawal" target="_blank" rel="noopener noreferrer" aria-label="Support Shawal via PayPal — opens in a new tab">PayPal ↗</a>
-      <a class="support-link" href="https://buymeacoffee.com/xshawalx" target="_blank" rel="noopener noreferrer" aria-label="Support Shawal via Buy Me a Coffee — opens in a new tab">Buy Me a Coffee ↗</a>
+      <a class="support-link support-link--primary" href="https://www.paypal.com/paypalme/noorshawal" target="_blank" rel="noopener noreferrer" aria-label="Support Shawal via PayPal â€” opens in a new tab">PayPal â†—</a>
+      <a class="support-link" href="https://buymeacoffee.com/xshawalx" target="_blank" rel="noopener noreferrer" aria-label="Support Shawal via Buy Me a Coffee â€” opens in a new tab">Buy Me a Coffee â†—</a>
     </div>
   </section>`;
 }
@@ -111,7 +111,7 @@ ${header}
     <p class="intro">Useful AI master prompts you can customize, copy and use.</p>
     <div class="toolbar">
       <label class="sr-only" for="prompt-search">Search prompts</label>
-      <input class="input" id="prompt-search" type="search" placeholder="Search by title, category, tag, use case…" autocomplete="off">
+      <input class="input" id="prompt-search" type="search" placeholder="Search by title, category, tag, use caseâ€¦" autocomplete="off">
       <a class="button button-primary" href="#all-prompts">Browse all</a>
     </div>
   </section>
@@ -157,7 +157,7 @@ await writeFile(path.join(OUT,'data/prompts-index.json'),JSON.stringify(indexMet
 
 for(const p of prompts){
   const rel=related(p);
-  const url=`${BASE�${p.slug}/`;
+  const url=`${BASE}${p.slug}/`;
   const title=`${p.title} | Shawal`;
 
   const breadcrumbs={
@@ -239,7 +239,7 @@ ${header}
     <h1 class="prompt-title">${esc(p.title)}</h1>
     <p class="prompt-intro">${esc(p.description)}</p>
     <div class="meta-row">
-      <span>Who it’s for: ${esc(p.audience)}</span>
+      <span>Who itâ€™s for: ${esc(p.audience)}</span>
       <span>Version ${esc(p.version)}</span>
       <span>Updated ${esc(fmt(p.updatedAt))}</span>
     </div>
