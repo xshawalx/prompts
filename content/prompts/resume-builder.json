@@ -1,0 +1,66 @@
+{
+  "slug": "resume-builder",
+  "title": "Resume Builder & Career Experience Audit",
+  "description": "Audit your real work experience first, then build a truthful ATS-friendly resume tailored to your target role.",
+  "audience": "Professionals and job seekers tailoring a resume for a specific role or job market",
+  "category": "Career",
+  "tags": [
+    "resume",
+    "CV",
+    "ATS",
+    "career",
+    "job applications",
+    "experience audit",
+    "resume writing"
+  ],
+  "useCases": [
+    "audit missing resume experience",
+    "rewrite a resume for a target role",
+    "prepare an ATS-friendly resume",
+    "uncover overlooked responsibilities and achievements"
+  ],
+  "featured": true,
+  "isNew": true,
+  "version": "1.0",
+  "updatedAt": "2026-09-23",
+  "fields": [
+    {
+      "key": "targetRole",
+      "label": "Target Role",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Business Analyst"
+    },
+    {
+      "key": "country",
+      "label": "Country / Job Market",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "Malaysia"
+    },
+    {
+      "key": "currentRole",
+      "label": "Current Role",
+      "type": "required-text",
+      "required": true,
+      "placeholder": "IT Business Analyst"
+    },
+    {
+      "key": "yearsOfExperience",
+      "label": "Years of Experience",
+      "type": "number",
+      "required": true,
+      "placeholder": "5",
+      "min": 0,
+      "max": 60,
+      "step": 1
+    }
+  ],
+  "howToUse": [
+    "Fill in your target role, job market, current role and years of experience.",
+    "Copy the completed master prompt and open ChatGPT.",
+    "Attach your current resume plus notes about your real day-to-day work, projects, tools and achievements.",
+    "Answer the 20 targeted questions before asking for the Version 1 rewrite."
+  ],
+  "prompt": "MASTER PROMPT — RESUME BUILDER & CAREER EXPERIENCE AUDIT\n\nAct as my senior resume strategist, technical recruiter, ATS resume specialist, career coach and critical reviewer.\n\nMy target role:\n{{targetRole}}\n\nMy country / job market:\n{{country}}\n\nMy current role:\n{{currentRole}}\n\nYears of experience:\n{{yearsOfExperience}}\n\nI will attach:\n1. My current resume\n2. Additional notes describing my actual day-to-day work, projects, responsibilities, tools, technologies and achievements\n\nIMPORTANT:\n\nDo NOT immediately rewrite my resume.\n\nFirst, study everything I provide carefully.\n\nThen ask me 20 targeted questions that will help uncover important information that may be missing from my resume.\n\nYour questions should investigate areas such as:\n- day-to-day responsibilities\n- projects\n- systems/platforms\n- tools and technologies\n- integrations\n- stakeholders\n- business responsibilities\n- technical responsibilities\n- measurable outcomes\n- improvements I contributed to\n- delivery responsibilities\n- leadership/ownership\n- achievements\n- skills I may have forgotten to mention\n\nOnly ask questions that are genuinely relevant based on my existing resume and notes.\n\nDo NOT invent experience.\n\nDo NOT encourage me to claim technologies, achievements, responsibilities or metrics that I cannot personally defend in an interview.\n\nAfter I answer the 20 questions:\n\n1. Analyse my current resume.\n2. Identify important experience that is underrepresented or missing.\n3. Rewrite the resume for my target role.\n4. Keep it ATS-friendly.\n5. Keep the design minimalist and professional.\n6. Prioritise clear impact, responsibilities and relevant technical/business skills.\n7. Remove unnecessary filler.\n8. Do not use exaggerated corporate language.\n9. Do not change factual information without my confirmation.\n10. Make sure every claim remains truthful to the information I provided.\n\nBefore finalising, perform a consistency check between:\n- my original resume\n- my additional notes\n- my answers\n- the revised resume\n\nFlag anything that requires my confirmation.\n\nThe revised resume is Version 1 only.\n\nI will manually review it and return with corrections before using it for applications."
+}
