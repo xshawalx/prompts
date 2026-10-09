@@ -66,8 +66,8 @@ const header=`<body>
   <a class="xs-wordmark" href="/" aria-label="Shawal home">Shawal</a>
   <nav class="xs-nav" aria-label="Primary navigation">
     <a href="/">Home</a>
-    <a href="/ugc/">UGC</a>
     <a href="/fitness/">Fitness</a>
+    <a href="/ugc/">UGC</a>
     <a href="/prompts/" aria-current="page">Prompts</a>
   </nav>
 </header>`;

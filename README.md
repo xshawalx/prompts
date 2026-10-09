@@ -105,4 +105,4 @@ Only two base colors are used:
 - Background black `#0D0D0E`
 - Surface `#121212`, card `#171717`, ink `#F5F5F5`, muted `#A0A0A0`
 
-Use the live homepage tokens as the source of truth. Shared cross-site navigation CSS is served from `/assets/css/shared-nav.css` on the root Pages repository. The order is Home | UGC | Fitness | Prompts; do not hard-code a diverging header in generated pages.
+Use the live homepage tokens as the source of truth. Shared cross-site navigation CSS is served from `/assets/css/shared-nav.css` on the root Pages repository. The order is Home | Fitness | UGC | Prompts; do not hard-code a diverging header in generated pages.
