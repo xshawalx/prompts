@@ -53,7 +53,8 @@ function head({title,description,url,ogType='website'}){
 <link rel="icon" href="/prompts/favicon.svg" type="image/svg+xml">\n<link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/prompts/assets/css/styles.css">`;
+<link rel="stylesheet" href="/prompts/assets/css/styles.css">
+<link rel="stylesheet" href="/assets/css/shared-nav.css">`;
 }
 
 const header=`<body>
@@ -61,11 +62,13 @@ const header=`<body>
 <div class="ambient ambient-one" aria-hidden="true"></div>
 <div class="ambient ambient-two" aria-hidden="true"></div>
 <div class="page-shell">
-<header class="topbar" aria-label="Site header">
-  <a class="wordmark" href="/" aria-label="Shawal home">Shawal</a>
-  <nav class="mini-nav" aria-label="Primary navigation">
-    <a href="/prompts/" aria-current="page">Prompts</a>
+<header class="topbar xs-header" aria-label="Site header">
+  <a class="xs-wordmark" href="/" aria-label="Shawal home">Shawal</a>
+  <nav class="xs-nav" aria-label="Primary navigation">
+    <a href="/">Home</a>
     <a href="/ugc/">UGC</a>
+    <a href="/fitness/">Fitness</a>
+    <a href="/prompts/" aria-current="page">Prompts</a>
   </nav>
 </header>`;
 
